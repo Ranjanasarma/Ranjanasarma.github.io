@@ -1,0 +1,226 @@
+body {
+    font-family: "Montserrate-Black";
+}
+
+#Home {
+    background-color: #ff4c68;
+    color: #ffff;
+}
+
+.heading {
+    color: #FF0000;
+}
+
+.Container-fluid {
+    padding: 3% 15% 7%;
+}
+
+h1 {
+    font-family: "Montserrate-Bold";
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #ffff;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Montserrate-Bold";
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: "Montserrate-Bold";
+    font-size: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-family: "Montserrate-light";
+    color: #8f8f8f;
+    text-align: center;
+}
+
+h6 {
+    font-family: "Montserrate-bold";
+    color: #0000;
+    text-align: center;
+}
+
+
+/** navigation bar*/
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "ubantu";
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.nav-item {
+    padding: 0 18px;
+    color: #ffff;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: #ffff;
+    font-family: "Montserrate-light";
+}
+
+.cd-headline.rotate-1 .cd-words-wrapper {
+    display: inline-block;
+    perspective: 300px;
+}
+
+.cd-headline.rotate-1 b {
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: rotateX(180deg);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cd-headline.rotate-1 b.is-visible {
+    position: relative;
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+
+.cd-headline.rotate-1 b {
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: rotateX(180deg);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cd-headline.rotate-1 b.is-visible {
+    position: relative;
+    opacity: 1;
+    transform: rotateX(0deg);
+    animation: cd-rotate-1-in 1.2s;
+}
+
+.cd-headline.rotate-1 b.is-hidden {
+    transform: rotateX(180deg);
+    animation: cd-rotate-1-out 1.2s;
+}
+
+@keyframes cd-rotate-1-in {
+    0% {
+        transform: rotateX(180deg);
+        opacity: 0;
+    }
+    35% {
+        transform: rotateX(120deg);
+        opacity: 0;
+    }
+    65% {
+        opacity: 0;
+    }
+    100% {
+        transform: rotateX(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes cd-rotate-1-out {
+    0% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    35% {
+        transform: rotateX(-40deg);
+        opacity: 1;
+    }
+    65% {
+        opacity: 0;
+    }
+    100% {
+        transform: rotateX(180deg);
+        opacity: 0;
+    }
+}
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+
+/**title image*/
+
+.title-image {
+    width: 50%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 20%;
+}
+
+#Portfolio {
+    padding: 7% 15%;
+    background-color: #ffff;
+    position: relative;
+}
+
+.Portfolio-box {
+    text-align: center;
+    padding: 5%;
+    align-items: center;
+}
+
+.icon-image {
+    color: #ef8172;
+}
+
+.icon:hover {
+    color: #ff4c68;
+}
+
+
+/** tectimonial section */
+
+#About {
+    padding: 7% 15%;
+    background-color: #D3D3D3;
+    line-height: 2;
+    margin-top: 1rem;
+    font-family: "Montserrate-bold"
+}
+
+.about-img {
+    width: 60%;
+    margin: 10px;
+}
+
+#Contact {
+    padding: 7% 15%;
+}
+
+.form-group {
+    font-size: 30px;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+@media (max-width:1028px) {
+    #title {
+        text-align: center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+.soial-icon {
+    margin: 20px 30px;
+}
